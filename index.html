@@ -1,0 +1,87 @@
+<!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>-->
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--&lt;!&ndash;&#45;&#45;&#45;&#45; Include the above in your HEAD tag &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Converter</title>
+
+    <!--Bootsrap 4.1.1 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Custom styles-->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="d-flex justify-content-center h-100 main">
+        <div class="card">
+            <div class="card-header mt-2">
+                <h3 class="fw-bold">Unit Converter</h3>
+                <h4 class="fw-bold" id="error"></h4>
+
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form">
+                    <div class="input-group form-group mb-2">
+
+                        <select class="form-select custom-select mr-1" id="form-select">
+                            <option selected>Input Currency</option>
+                            <option>USD</option>
+                            <option>BDT</option>
+                            <option>EUR</option>
+                            <option>CAD</option>
+                        </select>
+                        <span class="text-white text-center">TO</span>
+                        <select class="form-select custom-select ml-1" id="to-select">
+                            <option selected>Output Currency</option>
+                            <option>USD</option>
+                            <option>BDT</option>
+                            <option>EUR</option>
+                            <option>CAD</option>
+                        </select>
+
+                    </div>
+                    <div class="input-group form-group mb-2">
+
+                        <input type="text" class="form-control" placeholder="Input Unit" id="unit">
+
+                    </div>
+                    <div class="input-group form-group mb-2 d-none" id="show">
+
+                        <input type="text" class="form-control" placeholder="Result" id="result">
+                    </div>
+                    </div>
+                    <div class="row align-items-center remember mb-2">
+                        <input type="checkbox" id="custom-checkbox" name="checkbox">Show Rate in All Unit
+                    </div>
+                    <div class="form-group">
+                        <input type="button" value="Calculate" class="btn float-left login_btn" >
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-center links gradient mt-1 hover">
+                    Made by &nbsp;
+                    <div><sup>&copy;</sup></div>
+                    Snigdho
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="https://snigdho48.github.io/portfolio/" class="text-decoration-none fw-bold hover">About
+                        Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Custom Javascript -->
+        <script src="js/main.js"></script>
+
+</div>
+</body>
+</html>

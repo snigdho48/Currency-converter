@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+:root {
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.container {
+    height: 100%;
+    align-content: center;
+}
+
+.card {
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+
+.card-header h3 {
+    color: white;
+}
+
+.social_icon {
+    position: absolute;
+    right: 20px;
+    top: -45px;
+}
+
+.input-group-prepend span {
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border: 0 !important;
+}
+
+input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember {
+    color: white;
+}
+
+.remember input {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.login_btn {
+    color: black;
+    background: var(--clr-neon);
+    width: 125px;
+    font-weight: bold;
+}
+
+.login_btn:hover {
+    font-size: 1.2em;
+    color: white;
+    background-color: var(--clr-neon);
+    box-shadow: 0 0 .15em 0.15em var(--clr-neon);
+    transition: opacity 100ms linear;
+    opacity: 0.7;
+    font-weight: bold;
+
+
+}
+
+input:hover {
+    border-color: var(--clr-neon)
+
+}
+
+.links {
+    color: white;
+}
+
+.links a {
+    margin-left: 4px;
+}
+
+.fw-bold {
+    background: -webkit-linear-gradient(left, #64E8DE, #8A64EB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hover {
+
+}
+
+.hover:hover {
+    font-size: 1.25em;
+    cursor: pointer;
+
+}
+
+.custom-select {
+    -o-appearance: none !important;
+    -ms-appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    color: #59616b;
+}
+
+.custom-select:hover {
+    border-color: var(--clr-neon)
+}
+
+.gradient, sup {
+    background: -webkit-linear-gradient(right, #64E8DE, #8A64EB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        width: 80% !important;
+    }
+
+    .card-body {
+        flex: 1 1 auto;
+        padding: 1.5rem 1.5rem;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    font-size: 14px;
+}

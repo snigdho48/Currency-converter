@@ -147,3 +147,35 @@ function all(event) {
 
 
 check.addEventListener('change', all);
+
+
+function displaySize(event) {
+    'use strict';
+    event.preventDefault();
+    var x = document.getElementById('card');
+
+
+    if (window.screen.width <= 767) {
+
+        x.classList.add('w-100');
+
+    } else {
+        x.classList.remove('w-100');
+
+    }
+
+}
+
+
+window.addEventListener('resize', displaySize);
+
+if (window.screen.width < 767) {
+
+    var x = document.getElementById('card');
+    x.classList.add('w-100');
+
+} else {
+    x.classList.remove('w-100');
+
+}
+

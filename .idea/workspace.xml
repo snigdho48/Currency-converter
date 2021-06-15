@@ -36,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gymstore/gymstore" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -61,6 +61,8 @@
       <workItem from="1623715694949" duration="170000" />
       <workItem from="1623744922080" duration="3983000" />
       <workItem from="1623749061165" duration="1439000" />
+      <workItem from="1623750627602" duration="622000" />
+      <workItem from="1623762798597" duration="2965000" />
     </task>
     <servers />
   </component>
@@ -68,17 +70,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="278" y="45" width="800" height="686" key="#JSHint" timestamp="1623706896100">
+    <state x="278" y="45" width="800" height="686" key="#JSHint" timestamp="1623763739839">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="278" y="45" width="800" height="686" key="#JSHint/0.0.1366.768@0.0.1366.768" timestamp="1623706896100" />
+    <state x="278" y="45" width="800" height="686" key="#JSHint/0.0.1366.768@0.0.1366.768" timestamp="1623763739839" />
     <state x="268" y="0" width="820" height="768" key="CommitChangelistDialog2" timestamp="1623715420551">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="268" y="0" width="820" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1623715420551" />
-    <state x="466" y="142" width="424" height="493" key="FileChooserDialogImpl" timestamp="1623750642559">
+    <state x="466" y="142" width="424" height="493" key="FileChooserDialogImpl" timestamp="1623754591141">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="466" y="142" width="424" height="493" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1623750642559" />
+    <state x="466" y="142" width="424" height="493" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1623754591141" />
   </component>
 </project>

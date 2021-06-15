@@ -1,4 +1,5 @@
 var btn = document.querySelector('.btn');
+var check = document.querySelector("input[name=checkbox]");
 var crrncy = {
     'BDT': {
         'USD': 0.012,
@@ -35,10 +36,30 @@ function cal(event) {
     var error = document.getElementById('error');
     var show = document.getElementById('show');
     var input_field = document.getElementById('unit');
+    var p = input.split(/\s/);
+    var input_last = p[0];
+    var i;
 
     event.preventDefault();
 
-    if (x === 'Input Currency' || y === 'Output Currency' || !input || input.length === 0) {
+
+    if (check.checked === true) {
+        input_field.value = parseFloat(input_last) + ' ' + x;
+
+        for (i in crrncy[x]) {
+            if (i !== x) {
+                if (crrncy[x].hasOwnProperty(i)) {
+
+                    show.insertAdjacentHTML('afterend', '<div class="input-group form-group my-2" id="all"> <input type="text" class="form-control" placeholder= "' + parseFloat(input_last) * crrncy[x][i] + ' ' + i + ' " id="result"> </div>');
+
+
+                }
+            }
+        }
+        error.innerHTML = '';
+
+
+    } else if (x === 'Input Currency' || y === 'Output Currency' || !input || input.length === 0) {
 
         error.innerHTML = 'Missing Something?';
         output.value = 'Result';
@@ -50,12 +71,11 @@ function cal(event) {
             show.remove.className = 'd-block';
 
         }
-
     } else if (x === y) {
 
         error.innerHTML = '';
-        output.value = input + ' ' + x;
-        input_field.value = input + ' ' + x;
+        output.value = parseFloat(input_last) + ' ' + x;
+        input_field.value = parseFloat(input_last) + ' ' + x;
         show.className = 'd-block';
         show.remove.className = 'd-none';
 
@@ -63,8 +83,8 @@ function cal(event) {
     } else {
 
         error.innerHTML = '';
-        output.value = input * crrncy[x][y] + ' ' + x;
-        input_field.value = input + ' ' + x;
+        output.value = parseFloat(input_last) * crrncy[x][y] + ' ' + y;
+        input_field.value = parseFloat(input_last) + ' ' + x;
         show.className = 'd-block';
         show.remove.className = 'd-none';
 
@@ -74,7 +94,6 @@ function cal(event) {
 }
 
 btn.addEventListener('click', cal);
-var check = document.querySelector("input[name=checkbox]");
 
 
 function all(event) {
@@ -88,10 +107,12 @@ function all(event) {
     show.classList.remove('d-block');
     show.className = 'd-none';
     var i;
+    var p = input.split(/\s/);
+    var input_last = p[0];
 
 
     event.preventDefault();
-
+    error.innerHTML = '';
 
     if (check.checked === true) {
         if (x === 'Input Currency' || !input || input.length === 0) {
@@ -115,14 +136,14 @@ function all(event) {
                 show.remove.className = 'd-block';
 
             }
-            input_field.value = input + ' ' + x;
+            input_field.value = parseFloat(input_last) + ' ' + x;
 
 
             for (i in crrncy[x]) {
                 if (i !== x) {
                     if (crrncy[x].hasOwnProperty(i)) {
 
-                        show.insertAdjacentHTML('afterend', '<div class="input-group form-group my-2" id="all"> <input type="text" class="form-control" placeholder= "' + input * crrncy[x][i] + ' ' + i + ' " id="result"> </div>');
+                        show.insertAdjacentHTML('afterend', '<div class="input-group form-group my-2" id="all"> <input type="text" class="form-control" placeholder= "' + parseFloat(input_last) * crrncy[x][i] + ' ' + i + ' " id="result"> </div>');
 
 
                     }
@@ -138,8 +159,10 @@ function all(event) {
 
 
                 document.getElementById("all").remove();
+
             }
         }
+
 
     }
 

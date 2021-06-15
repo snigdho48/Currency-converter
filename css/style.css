@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 :root {
-    --clr-neon: hsl(317 100% 54%);
-    --clr-bg: hsl(323 21% 16%);
+    --clr-neon: hsl(317 ,100% ,54%);
+    --clr-bg: hsl(323, 21% ,16%);
 }
 
 *,
@@ -51,7 +51,7 @@ html, body {
 }
 
 input:focus {
-    outline: 0 0 0 0 !important;
+    outline: 0  !important;
     box-shadow: 0 0 0 0 !important;
 
 }
